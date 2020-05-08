@@ -1,3 +1,10 @@
-body {
-  background-color: yellow;
+#container {
+  width: 360px;
+  margin: 20px auto;
+  border: 2px solid lightgray;
+}
+
+.completed {
+  color: gray;
+  text-decoration: line-through;
 }
