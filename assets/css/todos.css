@@ -1,17 +1,116 @@
 body {
+  height: 100vh;
+  margin: 0;
+  position: relative;
   background-image: url('/Users/aga/Desktop/Udemy/Todo/assets/images/background1.jpg');
   background-size: cover;
+  background-repeat:no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  font-family: 'Amatic SC', cursive;
 }
 
+h1 {
+  text-align: center;
+  font-size: 3.5em;
+  margin-top: 0;
+  margin-bottom: 0;
+}
 
+h3 {
+  float: right;
+  font-size: 9em;
+  margin:0;
+  line-height: 50%;
+  position: absolute;
+  right: 0%;
+  bottom: 0%;
+  cursor: pointer;
+}
 
-#container {
-  width: 360px;
-  margin: 20px auto;
-  border: 2px solid lightgray;
+ul {
+  list-style: none;
+  font-size: 2em;
+  margin-bottom: 0;
+  cursor: pointer;
+}
+
+li:hover span {
+  color: #CF3837;
+  width: 40px;
+  cursor: pointer;
+}
+
+input {
+  background-color: transparent;
+  width: 80%;
+  padding: 13px 13px 4px 20px;
+  margin-top: 1em;
+  font-size: 2em;
+  font-family:'Amatic SC', cursive;
+  border: 0px solid black;
+  border-bottom: 2px dotted #CF3837;
+  font-style: italic;
+  display: none;
+}
+
+input:focus{
+  outline: none;
+}
+
+span {
+  color: transparent;
+  width: 0;
+  height: 40px;
+  display: inline-block;
+  text-align: center;
+  transition: 0.3s linear;
 }
 
 .completed {
   color: gray;
   text-decoration: line-through;
 }
+
+#heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#container {
+  position: absolute;
+  top: 15%;
+  bottom: 20%;
+  right: 20%;
+  left: 58%;
+  width: 360px;
+  min-height: 500px;
+}
+
+#underline {
+  width: 40%;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px){
+  body {
+    background-position: 84% 50%
+  }
+  #container {
+    top: 19%;
+    left: 32%;
+  }
+}
+
+@media (max-width: 600px){
+  body {
+    background-position: 81% 50%
+  }
+   #container {
+    width: 330px;
+    left: 9%;
+    top: 19%;
+  }
+}
+
