@@ -1,3 +1,10 @@
+body {
+  background-image: url('/Users/aga/Desktop/Udemy/Todo/assets/images/background1.jpg');
+  background-size: cover;
+}
+
+
+
 #container {
   width: 360px;
   margin: 20px auto;
